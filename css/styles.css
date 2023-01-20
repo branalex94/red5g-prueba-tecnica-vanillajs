@@ -204,6 +204,11 @@
 .table__header tr {
   border-radius: 5px;
 }
+
+.table__header tr th {
+  cursor: pointer;
+}
+
 .table__header tr th > i {
   margin-left: 0.5rem;
 }
