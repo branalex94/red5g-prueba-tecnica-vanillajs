@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome script -->
+    <script
+      src="https://kit.fontawesome.com/0172e70ac9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="./assets/jquery.js" defer></script>
+    <script type="module" src="./js/index.js" defer></script>
+    <title>Wiicar</title>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <header class="header">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__menu-container">
+              <div class="header__menu-hamburger"></div>
+            </li>
+            <li class="header__logo">Wiicar</li>
+            <li class="header__button-container">
+              <button class="header__button">
+                <i class="fa-solid fa-power-off"></i>
+                <span>Salir</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <ul class="filters">
+          <li class="filters__item filters__item--active">
+            <i class="fa-solid fa-car"></i>
+            Preparación
+          </li>
+          <li class="filters__item">
+            <i class="fa-solid fa-warehouse"></i>
+            Almacenamiento
+          </li>
+          <li class="filters__item">
+            <i class="fa-solid fa-tags"></i>
+            En venta
+          </li>
+          <li class="filters__item">
+            <i class="fa-regular fa-money-bill-1"></i>
+            Vendidos
+          </li>
+        </ul>
+      </header>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead class="table__header">
+            <tr>
+              <th>
+                <input
+                  type="checkbox"
+                  class="table__checkbox"
+                />
+              </th>
+              <th>
+                ID
+                <i class="fa-solid fa-up-down"></i>
+              </th>
+              <th>
+                Placa
+                <i class="fa-solid fa-up-down"></i>
+              </th>
+              <th>
+                Marca
+                <i class="fa-solid fa-up-down"></i>
+              </th>
+              <th>
+                Modelo
+                <i class="fa-solid fa-up-down"></i>
+              </th>
+              <th>
+                Kilometraje
+                <i class="fa-solid fa-up-down"></i>
+              </th>
+              <th>
+                Transmisión
+                <i class="fa-solid fa-up-down"></i>
+              </th>
+              <th>
+                Tipo
+                <i class="fa-solid fa-up-down"></i>
+              </th>
+              <th>
+                Precio de compra
+                <i class="fa-solid fa-up-down"></i>
+              </th>
+              <th>
+                Proviniencia
+                <i class="fa-solid fa-up-down"></i>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="table__body"></tbody>
+        </table>
+      </div>
+      <footer class="footer">
+        <!-- {/* Search bar start */} -->
+        <div class="footer__filter-controller footer__search-input-container">
+          <input
+            type="text"
+            placeholder="Busqueda Por Coincidencia"
+            class="footer__input footer__search-input"
+          />
+          <i class="fa-solid fa-magnifying-glass footer__magnifier-icon"></i>
+        </div>
+        <!-- {/* Search bar end */}
+      {/* Results amount select tag start */} -->
+        <div
+          class="footer__filter-controller footer__results-dropdown-container"
+        >
+          <label htmlFor="results" class="footer__results-label">
+            Resultados
+          </label>
+          <select id="results" class="footer__results-amount"></select>
+        </div>
+        <!-- {/* Results amount select tag end */}
+      {/* page selector start */} -->
+        <div class="footer__filter-controller footer__total-results-filter">
+          <button class="foooter__total-results__button left-arrow">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <input type="text" class="footer__results-page" />
+          <span>De </span>
+          <span class="footer-pages">0</span>
+          <button class="foooter__total-results__button right-arrow">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <!-- {/* page selector end */} -->
+        <div class="footer__filter-controller footer__actions-container">
+          <button class="footer__actions-button">
+            <span>Acciones</span>
+            <i class="fa-solid fa-caret-down footer__action-arrow"></i>
+          </button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
