@@ -78,7 +78,7 @@ function handleLeftArrowClick() {
 
 // Search bar filter function
 function handleSearchInput() {
-  const input = $(this).val();
+  const input = $(this).val().toLowerCase();
   let newData = [];
   if (!input) {
     loadItems(state.data);
