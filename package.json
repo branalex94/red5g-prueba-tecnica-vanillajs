@@ -1,0 +1,24 @@
+{
+  "name": "red5g-wiicar-prueba-vanilla",
+  "version": "1.0.0",
+  "description": "A technical assessment for a frontend junior role at Red5g using jQuery and vanilla JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/branalex94/red5g-prueba-tecnica-vanillajs.git"
+  },
+  "keywords": [],
+  "author": "Brandon Aray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/branalex94/red5g-prueba-tecnica-vanillajs/issues"
+  },
+  "homepage": "https://github.com/branalex94/red5g-prueba-tecnica-vanillajs#readme",
+  "standard": {
+    "globals": [ "$" ]
+  }
+  
+}

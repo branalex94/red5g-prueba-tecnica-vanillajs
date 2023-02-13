@@ -1,26 +1,32 @@
-import { loadItems } from "./main.js";
-import { events } from "./eventFunctions.js";
+import { loadItems } from './main.js'
+import { events } from './eventFunctions.js'
 
 const state = {
   data: [],
   totalPages: 0,
   offset: 0,
   amountPerPage: 10,
-  orientation: "ASC",
+  orientation: 'ASC',
   currentPage: 1,
   filteredData: []
 }
-let results = [
+const results = [
   10, 20, 30, 40
-];
+]
 
-$(document).ready(function () {
-  loadItems(state.data);
-  events();
-  $(".footer__results-amount").empty().append(results.map(result => `<option value="${result}">${result}</option>`).join(""));
-});
+function fillFooterOptions () {
+  const options = results.map(result => `<option value="${result}">${result}</option>`).join('')
+  $('.footer__results-amount').empty().append(options)
+}
+
+function init () {
+  loadItems(state.data)
+  events()
+  fillFooterOptions()
+}
+
+$(init)
 
 export {
-  loadItems,
   state
 }

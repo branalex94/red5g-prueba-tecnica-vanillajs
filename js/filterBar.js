@@ -1,5 +1,6 @@
 export const footerContextMenu = (array) =>
-  !array.length ? (`
+  !array.length
+    ? (`
     <div
       class="footer__actions-options"
     >
@@ -12,7 +13,8 @@ export const footerContextMenu = (array) =>
         Nuevo Registro
       </button>
     </div>`
-  ) : (
+      )
+    : (
     `<div
     class="footer__actions-options footer__actions-filled-table"
   >
@@ -37,4 +39,4 @@ export const footerContextMenu = (array) =>
       Eliminar
     </button>
   </div>`
-  )
+      )

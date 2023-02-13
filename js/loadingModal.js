@@ -13,4 +13,4 @@ export const modal = () => `<div class="modal">
     </div>
   </div>
 </div>
-</div>`;
+</div>`

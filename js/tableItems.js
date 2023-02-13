@@ -28,5 +28,4 @@ export const tableBodyTemplate = (item) => `<tr>
     <button>Almacenar</button>
   </div>
 </td>
-</tr>`;
-
+</tr>`
